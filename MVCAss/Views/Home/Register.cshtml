@@ -1,0 +1,92 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+<div>
+    Welcome to Jumia! Register as a vendor
+</div>
+    <br />
+    <br />
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <div class="col-md-4">First Name</div>
+                <div class="col-md-8"><input type="text" name="FirstName" class="form-control" /></div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4 left">Last Name</div>
+                <div class="col-md-8 left"><input type="text" name="LastName" class="form-control" /></div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4">Store Name</div>
+                <div class="col-md-8"><input type="text" name="StoreName" class="form-control" /></div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4">Date Of Birth</div>
+                <div class="col-md-8"><input type="date" name="DateOfBirth" class="form-control" /></div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4">Store Address</div>
+                <div class="col-md-8"><input type="text" name="StoreAddress" class="form-control" /></div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4">Location</div>
+                <div class="col-md-8">
+                    <select name="Location">
+                        <option value="1"> Select Location</option>
+                        <option value="2"> North East</option>
+                        <option value="3"> North West</option>
+                        <option value="4"> North Central</option>
+                        <option value="5"> South East</option>
+                        <option value="6"> South West</option>
+                        <option value="7"> South South</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4">Email Address</div>
+                <div class="col-md-8"><input type="text" name="EmailAddress" class="form-control" /></div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4">Phone Number</div>
+                <div class="col-md-8"><input type="text" name="PhoneNumber" class="form-control" /></div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4">Store Info</div>
+                <div class="col-md-8"><input type="text" name="StoreInfo" class="form-control" /></div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-4">Store Logo</div>
+                <div class="col-md-8"><input type="file" name="StoreLogo" class="form-control" /></div>
+            </div>
+            <br />
+            <div>@ViewBag.ErrorMessage</div>
+            <div class="form-group">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <button type="submit" class="btn-success">
+                        Register
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
